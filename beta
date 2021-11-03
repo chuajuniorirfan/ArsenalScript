@@ -5,8 +5,6 @@ local TitleText = Instance.new("TextLabel")
 local TitleText2 = Instance.new("TextLabel")
 local UIGradient = Instance.new("UIGradient")
 local Tutorial = Instance.new("TextLabel")
-local Aimbot = Instance.new("Frame")
-local Toggle = Instance.new("TextButton")
 local ToggleESP = Instance.new("TextButton")
 local SilentAim = Instance.new("Frame")
 local Toggle_2 = Instance.new("TextButton")
@@ -75,25 +73,6 @@ Tutorial.TextScaled = true
 Tutorial.TextSize = 14.000
 Tutorial.TextWrapped = true
 
-Aimbot.Name = "Aimbot"
-Aimbot.Parent = Main
-Aimbot.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-Aimbot.BorderSizePixel = 0
-Aimbot.Size = UDim2.new(0.0740964264, 0, 0.102285706, 0)
-
-Toggle.Name = "Toggle"
-Toggle.Parent = Aimbot
-Toggle.BackgroundColor3 = Color3.fromRGB(0, 255, 191)
-Toggle.BorderSizePixel = 0
-Toggle.Position = UDim2.new(0.984989047, 0, 0, 0)
-Toggle.Size = UDim2.new(3.84301138, 0, 0.999999762, 0)
-Toggle.Font = Enum.Font.GothamSemibold
-Toggle.Text = "Aimbot"
-Toggle.TextColor3 = Color3.fromRGB(0, 0, 0)
-Toggle.TextScaled = true
-Toggle.TextSize = 14.000
-Toggle.TextWrapped = true
-
 ToggleESP.Name = "ToggleESP"
 ToggleESP.Parent = Main
 ToggleESP.BackgroundColor3 = Color3.fromRGB(0, 255, 191)
@@ -111,7 +90,7 @@ SilentAim.Name = "SilentAim"
 SilentAim.Parent = Main
 SilentAim.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 SilentAim.BorderSizePixel = 0
-SilentAim.Position = UDim2.new(0, 0, 0.132571414, 0)
+SilentAim.Position = UDim2.new(0.984989047, 0, 0, 0)
 SilentAim.Size = UDim2.new(0.0740964264, 0, 0.102285706, 0)
 
 Toggle_2.Name = "Toggle"
@@ -131,7 +110,7 @@ TriggerBot.Name = "TriggerBot"
 TriggerBot.Parent = Main
 TriggerBot.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 TriggerBot.BorderSizePixel = 0
-TriggerBot.Position = UDim2.new(0, 0, 0.269714266, 0)
+TriggerBot.Position = UDim2.new(0, 0, 0.132571414, 0)
 TriggerBot.Size = UDim2.new(0.0740964264, 0, 0.102285706, 0)
 
 Toggle_3.Name = "Toggle"
@@ -178,66 +157,6 @@ local function FNLXR_fake_script()
 		end
 	end
 end
-coroutine.wrap(FNLXR_fake_script)()
-local function LBIK_fake_script()
-	local script = Instance.new('LocalScript', Toggle)
-
-	_G.aimbot = false
-	local camera = game.Workspace.CurrentCamera
-	local localPlayer = game:GetService("Players").LocalPlayer
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		if _G.aimbot == false then
-			_G.aimbot = true
-			script.Parent.Parent.Parent.Aimbot.BackgroundColor3 = Color3.fromRGB(0, 255, 59)
-			function closetPlayer()
-				local dist = math.huge
-				local target = nil
-				for i,v in pairs(game:GetService("Players"):GetPlayers()) do
-					if v ~= localPlayer then
-						if v.Character and v.Character:FindFirstChild("Head") and v.TeamColor ~= localPlayer.TeamColor and _G.aimbot then
-							local magnitude = (v.Charater.Head.Position - localPlayer.Character.Head.Position).magnitude
-							if magnitude < dist then
-								dist = magnitude
-								target = v
-							end
-						end
-					end
-				end
-				return target
-			end
-		else
-			_G.aimbot = false
-			script.Parent.Parent.Parent.Aimbot.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-		end
-	end)
-	
-	local settings = {
-		keybind = Enum.UserInputType.MouseButton2
-	}
-	
-	local UIS = game:GetService("UserInputService")
-	local aiming = false
-	
-	UIS.InputBegan:Connect(function(inp)
-		if inp.UserInputType == settings.keybind then
-			aiming = true
-		end
-	end)
-	
-	UIS.InputEnded:Connect(function(inp)
-		if inp.UserInputType == settings.keybind then
-			aiming = false
-		end
-	end)
-	
-	game:GetService("RunService").RenderStepped:Connect(function()
-		if aiming then
-			camera.CFrame = CFrame.new(camera.CFrame.Position,closetPlayer().Character.Head.Position)
-		end
-	end)
-end
-coroutine.wrap(LBIK_fake_script)()
 local function CLWQAG_fake_script()
 	local script = Instance.new('LocalScript', ToggleESP)
 
