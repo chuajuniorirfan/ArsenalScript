@@ -14,7 +14,7 @@ local TriggerBot = Instance.new("Frame")
 local Toggle_3 = Instance.new("TextButton")
 
 Arsenal.Name = "Arsenal"
-Arsenal.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Arsenal.Parent = game.CoreGui
 Arsenal.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Main.Name = "Main"
@@ -147,7 +147,7 @@ Toggle_3.TextScaled = true
 Toggle_3.TextSize = 14.000
 Toggle_3.TextWrapped = true
 
-local function VONSVJ_fake_script()
+local function FNLXR_fake_script()
 	local script = Instance.new('LocalScript', TitleText)
 
 	while wait() do
@@ -178,8 +178,8 @@ local function VONSVJ_fake_script()
 		end
 	end
 end
-coroutine.wrap(VONSVJ_fake_script)()
-local function WPEL_fake_script()
+coroutine.wrap(FNLXR_fake_script)()
+local function LBIK_fake_script()
 	local script = Instance.new('LocalScript', Toggle)
 
 	_G.aimbot = false
@@ -237,8 +237,8 @@ local function WPEL_fake_script()
 		end
 	end)
 end
-coroutine.wrap(WPEL_fake_script)()
-local function ESTYIER_fake_script()
+coroutine.wrap(LBIK_fake_script)()
+local function CLWQAG_fake_script()
 	local script = Instance.new('LocalScript', ToggleESP)
 
 	local esp_settings = {
@@ -275,8 +275,8 @@ local function ESTYIER_fake_script()
 		end
 	end)
 end
-coroutine.wrap(ESTYIER_fake_script)()
-local function KBFE_fake_script()
+coroutine.wrap(CLWQAG_fake_script)()
+local function HAUYT_fake_script()
 	local script = Instance.new('LocalScript', Toggle_2)
 
 	_G.silentaim = false
@@ -334,8 +334,8 @@ local function KBFE_fake_script()
 		return namecall(self,...)
 	end
 end
-coroutine.wrap(KBFE_fake_script)()
-local function FTDDIJN_fake_script()
+coroutine.wrap(HAUYT_fake_script)()
+local function JNVGOAR_fake_script()
 	local script = Instance.new('LocalScript', Toggle_3)
 
 	_G.triggerbot = false
@@ -356,8 +356,8 @@ local function FTDDIJN_fake_script()
 		end
 	end)
 end
-coroutine.wrap(FTDDIJN_fake_script)()
-local function JIRBZRE_fake_script()
+coroutine.wrap(JNVGOAR_fake_script)()
+local function BIYIG_fake_script()
 	local script = Instance.new('LocalScript', Main)
 
 	local frame = script.Parent.Parent.Main
@@ -382,4 +382,4 @@ local function JIRBZRE_fake_script()
 		end
 	end)
 end
-coroutine.wrap(JIRBZRE_fake_script)()
+coroutine.wrap(BIYIG_fake_script)()
