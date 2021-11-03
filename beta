@@ -1,0 +1,385 @@
+local Arsenal = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Titles = Instance.new("Frame")
+local TitleText = Instance.new("TextLabel")
+local TitleText2 = Instance.new("TextLabel")
+local UIGradient = Instance.new("UIGradient")
+local Tutorial = Instance.new("TextLabel")
+local Aimbot = Instance.new("Frame")
+local Toggle = Instance.new("TextButton")
+local ToggleESP = Instance.new("TextButton")
+local SilentAim = Instance.new("Frame")
+local Toggle_2 = Instance.new("TextButton")
+local TriggerBot = Instance.new("Frame")
+local Toggle_3 = Instance.new("TextButton")
+
+Arsenal.Name = "Arsenal"
+Arsenal.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Arsenal.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = Arsenal
+Main.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.39420113, 0, 0.0822085887, 0)
+Main.Size = UDim2.new(0.211314023, 0, 0.268404901, 0)
+Main.Active = true
+Main.Draggable = true
+
+Titles.Name = "Titles"
+Titles.Parent = Main
+Titles.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+Titles.BorderSizePixel = 0
+Titles.Position = UDim2.new(0, 0, -0.129394248, 0)
+Titles.Size = UDim2.new(1, 0, 0.127285719, 0)
+
+TitleText.Name = "TitleText"
+TitleText.Parent = Titles
+TitleText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TitleText.BackgroundTransparency = 1.000
+TitleText.Position = UDim2.new(-0.0613067001, 0, -0.421479225, 0)
+TitleText.Size = UDim2.new(0.456997782, 0, 0.398946166, 0)
+TitleText.Font = Enum.Font.FredokaOne
+TitleText.Text = "Made By Juni0r_YTxD"
+TitleText.TextColor3 = Color3.fromRGB(0, 0, 0)
+TitleText.TextScaled = true
+TitleText.TextSize = 14.000
+TitleText.TextWrapped = true
+
+TitleText2.Name = "TitleText2"
+TitleText2.Parent = Titles
+TitleText2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TitleText2.BackgroundTransparency = 1.000
+TitleText2.Position = UDim2.new(0.201436311, 0, 0.0972644389, 0)
+TitleText2.Size = UDim2.new(0.597127378, 0, 0.788003027, 0)
+TitleText2.Font = Enum.Font.FredokaOne
+TitleText2.Text = "Arsenal Script 1.0"
+TitleText2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TitleText2.TextScaled = true
+TitleText2.TextSize = 14.000
+TitleText2.TextWrapped = true
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 115, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 0))}
+UIGradient.Parent = TitleText2
+
+Tutorial.Name = "Tutorial"
+Tutorial.Parent = Titles
+Tutorial.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tutorial.BackgroundTransparency = 1.000
+Tutorial.Position = UDim2.new(0.218952343, 0, 8.10624123, 0)
+Tutorial.Size = UDim2.new(0.562094986, 0, 0.752088308, 0)
+Tutorial.Font = Enum.Font.FredokaOne
+Tutorial.Text = "F to close or open"
+Tutorial.TextColor3 = Color3.fromRGB(0, 46, 255)
+Tutorial.TextScaled = true
+Tutorial.TextSize = 14.000
+Tutorial.TextWrapped = true
+
+Aimbot.Name = "Aimbot"
+Aimbot.Parent = Main
+Aimbot.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Aimbot.BorderSizePixel = 0
+Aimbot.Size = UDim2.new(0.0740964264, 0, 0.102285706, 0)
+
+Toggle.Name = "Toggle"
+Toggle.Parent = Aimbot
+Toggle.BackgroundColor3 = Color3.fromRGB(0, 255, 191)
+Toggle.BorderSizePixel = 0
+Toggle.Position = UDim2.new(0.984989047, 0, 0, 0)
+Toggle.Size = UDim2.new(3.84301138, 0, 0.999999762, 0)
+Toggle.Font = Enum.Font.GothamSemibold
+Toggle.Text = "Aimbot"
+Toggle.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toggle.TextScaled = true
+Toggle.TextSize = 14.000
+Toggle.TextWrapped = true
+
+ToggleESP.Name = "ToggleESP"
+ToggleESP.Parent = Main
+ToggleESP.BackgroundColor3 = Color3.fromRGB(0, 255, 191)
+ToggleESP.BorderSizePixel = 0
+ToggleESP.Position = UDim2.new(0.716357052, 0, -0.00457143784, 0)
+ToggleESP.Size = UDim2.new(0.28364113, 0, 0.102285713, 0)
+ToggleESP.Font = Enum.Font.GothamSemibold
+ToggleESP.Text = "ESP"
+ToggleESP.TextColor3 = Color3.fromRGB(0, 0, 0)
+ToggleESP.TextScaled = true
+ToggleESP.TextSize = 14.000
+ToggleESP.TextWrapped = true
+
+SilentAim.Name = "SilentAim"
+SilentAim.Parent = Main
+SilentAim.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+SilentAim.BorderSizePixel = 0
+SilentAim.Position = UDim2.new(0, 0, 0.132571414, 0)
+SilentAim.Size = UDim2.new(0.0740964264, 0, 0.102285706, 0)
+
+Toggle_2.Name = "Toggle"
+Toggle_2.Parent = SilentAim
+Toggle_2.BackgroundColor3 = Color3.fromRGB(0, 255, 191)
+Toggle_2.BorderSizePixel = 0
+Toggle_2.Position = UDim2.new(0.984989047, 0, 0, 0)
+Toggle_2.Size = UDim2.new(3.84301138, 0, 0.999999762, 0)
+Toggle_2.Font = Enum.Font.GothamSemibold
+Toggle_2.Text = "SilentAim"
+Toggle_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toggle_2.TextScaled = true
+Toggle_2.TextSize = 14.000
+Toggle_2.TextWrapped = true
+
+TriggerBot.Name = "TriggerBot"
+TriggerBot.Parent = Main
+TriggerBot.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+TriggerBot.BorderSizePixel = 0
+TriggerBot.Position = UDim2.new(0, 0, 0.269714266, 0)
+TriggerBot.Size = UDim2.new(0.0740964264, 0, 0.102285706, 0)
+
+Toggle_3.Name = "Toggle"
+Toggle_3.Parent = TriggerBot
+Toggle_3.BackgroundColor3 = Color3.fromRGB(0, 255, 191)
+Toggle_3.BorderSizePixel = 0
+Toggle_3.Position = UDim2.new(0.984989047, 0, 0, 0)
+Toggle_3.Size = UDim2.new(3.84301138, 0, 0.999999762, 0)
+Toggle_3.Font = Enum.Font.GothamSemibold
+Toggle_3.Text = "TriggerBot"
+Toggle_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Toggle_3.TextScaled = true
+Toggle_3.TextSize = 14.000
+Toggle_3.TextWrapped = true
+
+local function VONSVJ_fake_script()
+	local script = Instance.new('LocalScript', TitleText)
+
+	while wait() do
+		script.Parent.TextColor3 = Color3.new(1,0,0)
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait(1)
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g+(17/255),script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait(1)
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r-(17/255),script.Parent.TextColor3.g,script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait(1)
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g,script.Parent.TextColor3.b+(17/255))
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait(1)
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g-(17/255),script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait(1)
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r+(17/255),script.Parent.TextColor3.g,script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait(1)
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g,script.Parent.TextColor3.b-(17/255))
+		end
+	end
+end
+coroutine.wrap(VONSVJ_fake_script)()
+local function WPEL_fake_script()
+	local script = Instance.new('LocalScript', Toggle)
+
+	_G.aimbot = false
+	local camera = game.Workspace.CurrentCamera
+	local localPlayer = game:GetService("Players").LocalPlayer
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.aimbot == false then
+			_G.aimbot = true
+			script.Parent.Parent.Parent.Aimbot.BackgroundColor3 = Color3.fromRGB(0, 255, 59)
+			function closetPlayer()
+				local dist = math.huge
+				local target = nil
+				for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+					if v ~= localPlayer then
+						if v.Character and v.Character:FindFirstChild("Head") and v.TeamColor ~= localPlayer.TeamColor and _G.aimbot then
+							local magnitude = (v.Charater.Head.Position - localPlayer.Character.Head.Position).magnitude
+							if magnitude < dist then
+								dist = magnitude
+								target = v
+							end
+						end
+					end
+				end
+				return target
+			end
+		else
+			_G.aimbot = false
+			script.Parent.Parent.Parent.Aimbot.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+		end
+	end)
+	
+	local settings = {
+		keybind = Enum.UserInputType.MouseButton2
+	}
+	
+	local UIS = game:GetService("UserInputService")
+	local aiming = false
+	
+	UIS.InputBegan:Connect(function(inp)
+		if inp.UserInputType == settings.keybind then
+			aiming = true
+		end
+	end)
+	
+	UIS.InputEnded:Connect(function(inp)
+		if inp.UserInputType == settings.keybind then
+			aiming = false
+		end
+	end)
+	
+	game:GetService("RunService").RenderStepped:Connect(function()
+		if aiming then
+			camera.CFrame = CFrame.new(camera.CFrame.Position,closetPlayer().Character.Head.Position)
+		end
+	end)
+end
+coroutine.wrap(WPEL_fake_script)()
+local function ESTYIER_fake_script()
+	local script = Instance.new('LocalScript', ToggleESP)
+
+	local esp_settings = {
+		textsize = 8,
+		colour = 255,255,255
+	}
+	
+	local gui = Instance.new("BillboardGui")
+	local esp = Instance.new("TextLabel",gui)
+	
+	
+	
+	gui.Name = "Cracked esp";
+	gui.ResetOnSpawn = false
+	gui.AlwaysOnTop = true;
+	gui.LightInfluence = 0;
+	gui.Size = UDim2.new(1.75, 0, 1.75, 0);
+	esp.BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+	esp.Text = ""
+	esp.Size = UDim2.new(0.0001, 0.00001, 0.0001, 0.00001);
+	esp.BorderSizePixel = 4;
+	esp.BorderColor3 = Color3.new(esp_settings.colour)
+	esp.BorderSizePixel = 0
+	esp.Font = "GothamSemibold"
+	esp.TextSize = esp_settings.textsize
+	esp.TextColor3 = Color3.fromRGB(esp_settings.colour)
+	
+	game:GetService("RunService").RenderStepped:Connect(function()
+		for i,v in pairs (game:GetService("Players"):GetPlayers()) do
+			if v ~= game:GetService("Players").LocalPlayer and v.Character.Head:FindFirstChild("Cracked esp")==nil and v.TeamColor ~= game:GetService("Players").LocalPlayer.TeamColor then
+				esp.Text = "{"..v.Name.."}"
+				gui:Clone().Parent = v.Character.Head
+			end
+		end
+	end)
+end
+coroutine.wrap(ESTYIER_fake_script)()
+local function KBFE_fake_script()
+	local script = Instance.new('LocalScript', Toggle_2)
+
+	_G.silentaim = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.silentaim == false then
+			_G.silentaim = true
+			script.Parent.Parent.Parent.SilentAim.BackgroundColor3 = Color3.fromRGB(0, 255, 59)
+		else
+			_G.silentaim = true
+			script.Parent.Parent.Parent.SilentAim.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+		end
+	end)
+	
+	local players = game:GetService("Players")
+	local plr = players.LocalPlayer
+	local mouse = plr:GetMouse()
+	local camera = game.Workspace.CurrentCamera
+	local teamcheck = true
+	
+	local function ClosestPlayerToMouse()
+		local target = nil
+		local dist = math.huge
+		for i,v in pairs(players:GetPlayers()) do
+			if v.Name ~= plr.Name then
+				if v.Character and v.Character:FindFirstChild("Humanoid") and v.Character.Humanoid.Health ~= 0 and v.Character:FindFirstChild("HumanoidRootPart") and _G.silentaim and teamcheck and v.TeamColor ~= plr.TeamColor then
+					local screenpoint = camera:WorldToScreenPoint(v.Character.HumanoidRootPart.Position)
+					local check = (Vector2.new(mouse.X,mouse.Y)-Vector2.new(screenpoint.X,screenpoint.Y)).magnitude
+	
+					if check < dist then
+						target  = v
+						dist = check
+					end
+				end
+			end
+		end
+	
+		return target 
+	end
+	
+	local mt = getrawmetatable(game)
+	local namecall = mt.__namecall
+	setreadonly(mt,false)
+	
+	mt.__namecall = function(self,...)
+		local args = {...}
+		local method = getnamecallmethod()
+	
+		if tostring(self) == "HitPart" and method == "FireServer" then
+			print("so?")
+			args[1] = ClosestPlayerToMouse().Character.Head
+			args[2] = ClosestPlayerToMouse().Character.Head.Position
+			return self.FireServer(self, unpack(args))
+		end
+		return namecall(self,...)
+	end
+end
+coroutine.wrap(KBFE_fake_script)()
+local function FTDDIJN_fake_script()
+	local script = Instance.new('LocalScript', Toggle_3)
+
+	_G.triggerbot = false
+	local player = game:GetService("Players").LocalPlayer
+	local mouse = player:GetMouse()
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.triggerbot then
+			_G.triggerbot = false
+			script.Parent.Parent.Parent.TriggerBot.BackgroundColor3 = Color3.fromRGB(0, 255, 59)
+		else
+			_G.triggerbot = true
+			script.Parent.Parent.Parent.TriggerBot.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+			game:GetService("RunService").RenderStepped:Connect(function()
+				if mouse.Target.Parent:FindFirstChild("Humanoid") and _G.triggerbot and mouse.Target.Parent.Name ~= player.Name then
+					mouse1press() wait() mouse1release()
+				end
+			end)
+		end
+	end)
+end
+coroutine.wrap(FTDDIJN_fake_script)()
+local function JIRBZRE_fake_script()
+	local script = Instance.new('LocalScript', Main)
+
+	local frame = script.Parent.Parent.Main
+	local hotkey = Enum.KeyCode.F
+	
+	local UIS = game:GetService("UserInputService")
+	local open = false
+	
+	
+	
+	UIS.InputBegan:Connect(function(key, gp)
+		if key.KeyCode == hotkey then
+			if UIS:GetFocusedTextBox() == nil then
+				if open == false then
+					open = true 
+					frame.Visible = open
+				elseif open == true then
+					open = false
+					frame.Visible = open
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(JIRBZRE_fake_script)()
